@@ -27,16 +27,9 @@ Ext.define("draggable.view.Main", {
 			width: 100,
 			height: 100,
 			floating: true,
-			//modal: true,
 			style: 'background-color: #00FF00; border: 1px solid #000;',
 			html: '&nbsp;',
-			//hidden: true,
-			id: 'recordInfo',
-			listeners:{
-				'afterrender': function(panel){
-					panel.setPosition(100,300);
-				}
-			}
+			id: 'recordInfo'
 		*/
 		}]
     }
