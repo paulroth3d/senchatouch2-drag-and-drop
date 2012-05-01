@@ -13,7 +13,7 @@ Ext.application({
     
     controllers: ['DragCtrl'],
 
-    views: ['Main', 'DragPanel1'],
+    views: ['Main', 'DragPanel1', 'DragPanel2', 'DragPanel3', 'DragPanel4'],
 
     icon: {
         57: 'resources/icons/Icon.png',
@@ -30,6 +30,15 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         Ext.Viewport.add(Ext.create('draggable.view.Main'));
+        
+        Ext.Viewport.add( Ext.create( "Ext.Panel", {
+			width: 100,
+			height: 100,
+			floating: true,
+			style: 'background-color: #00FF00; border: 1px solid #000;',
+			html: '&nbsp;',
+			id: 'recordInfo'
+        }));
     },
 
     onUpdated: function() {
